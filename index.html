@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">Create Account</h1>
+		<form class="login_form" action="home.html" name="form" onsubmit="return validated()">
+			<span class="font">Email:</span>
+			<input autocomplete="off" id="email" type="email" name="email" value=""><br><br>
+			<span class="font font2">Password:</span>
+			<input type="password" id="password" name="password" value=""><br><br>
+			<input type="checkbox" required>&nbsp;
+			<label style = "font-size: 18px" >
+				I accept the terms of service
+				</label>
+			<button type="submit" id="validate">Submit</button>
+		</form>
+	</div>	
+	<script src="script.js"></script>
+</body>
+</html>
